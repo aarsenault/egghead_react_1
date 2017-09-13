@@ -1,9 +1,3 @@
-// import React, { Component } from 'react';
-
-// const App = () => <h1> Hello</h1>
-// export default App;
-
-
 import React from 'react';
 
 class App extends React.Component {
@@ -12,21 +6,17 @@ class App extends React.Component {
     let txt = this.props.txt
     return <h1>{txt}</h1>
   }
+}
 
 
-    // render(){
-    //   return (
-    //     <div>
-    //       <h1>Hello World</h1>
-    //       <b>Bold</b>
-    //     </div>
-    //   )
+App.propTypes = {
+  // txt: React.PropTypes.string,
+  cat: React.PropTypes.number.isRequired
+}
 
-      // only allowed to return a single node
-      // return <h1>Hello World 2</h1>
-      // return React.createElement('h1', null, 'Hello 2')
 
-    // }
+App.defaultProps = {
+  txt: "this is the default txt"
 }
 
 export default App

@@ -4,7 +4,11 @@ import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-    <App txt="this is the prop value" />,
+
+
+    // <App cat={5} txt="this is the prop value" />,
+    // this one uses the default
+    <App cat={5} />,
     document.getElementById('root')
     );
 // registerServiceWorker();
